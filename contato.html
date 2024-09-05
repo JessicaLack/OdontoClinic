@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <link type="text/css" rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="imagens/favicon.ico">
+</head>
+
+<body>
+
+        <div class="wrapper"> <!-- caixa principal que irá receber os filhos -->
+            <div class="boxLogo">
+                <img src="IMAGENS/logo.png" class="tamanhoLogo">
+            </div>
+
+            <div class="boxBotoes">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="quem_somos.html">QUEM SOMOS</a></li>
+                        <li><a href="alinhamentos.html">ALINHAMENTOS</a></li>
+                        <li><a href="contato.html" style="border-bottom: #fff 2px solid;">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="boxForm">
+                <div id="conteudo_formulário"> 
+                    <form method="post" id="fContato" action="mailto:jessica.slbrito@senacsp.edu.br">
+                            <p>       
+                                <label for="cNome">Seu Nome</label><br>
+                                <input type="text" name="tNome" id="cNome" size="20%" maxlength="20" autofocus required />
+                            </p>
+
+                            <p>
+                                <label for="cTel">Telefone Para Contato</label><br>
+                                <input type="tel" name="tTel" id="cTel" size="20%" maxlength="25" required />
+                            </p>
+                            <p>
+                                <label for="cMail">E-mail</label><br>
+                                <input type="email" name="tMail" id="cMail" size="20%" maxlength="20" required />
+                            </p>
+                            <p>
+                                <label for="cData">Data desejada Para Consulta</label><br>
+                                <input type="date" name="tNasc" id="cNasc" size="11" placeholder="dd/mm/aaaa" required />
+                            </p>
+                            <textarea name="tMsg" id="tMsg" cols="60%" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+                            <!-- Botão -->
+                            <p>
+                                <input type="submit" name="Enviar" class="botao"/>
+                            </p>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="boxRedes">
+                <p><a href="#" class="textoRedes">A OdontoClinic</a></p>
+                <p><a href="#" class="textoRedes">Nossos Tratamentos</a></p>
+                </div>
+    
+                <div class="boxRedes">
+                    <p><a href="#" class="textoRedes">Onde estamos</a></p>
+                <p><a href="#" class="textoRedes">Harmonização Facial</a></p>
+                </div>
+    
+                <div class="boxRedes">
+                    <div>
+                        <a href=""><img src="IMAGENS/facebook.png" class="imagensRedes"></a>
+                        <a href=""><img src="IMAGENS/twitter.png" class="imagensRedes"></a>
+                        <a href=""><img src="IMAGENS/instagram.png" class="imagensRedes"></a>
+                    </div>
+                    <div><p class="textoRedes">Conecte-se</p></div>
+                </div>
+
+            <div class="boxRodape">
+                Todos os direitos reservados | OdontoClinic | 2024
+            </div>
+
+        </div>
+    
+</body>
+</html>
